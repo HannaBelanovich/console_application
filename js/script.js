@@ -1,7 +1,14 @@
 
 "use strict";
 
-//getting user answer about number of films
-const numberOfFilms = prompt ("Сколько фильмов вы уже посмотрели?");
+const numberOfFilms = +prompt ("Сколько фильмов вы уже посмотрели?", "");
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
 
