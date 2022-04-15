@@ -11,7 +11,15 @@ const personalMovieDB = {
     privat: false
 };
 
-
+/* if (personalMovieDB.count < 10) {
+    alert('Просмотрено мало фильмов');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count<= 30) {
+    alert('классический зритель');
+} else if (personalMovieDB.count > 30) {
+    alert('киноман');
+} else {
+    alert('error');
+} */
 
 for (let i = 0; i < 2; i++) {
     const a = prompt ("Один из последних просмотренных фильмов?", ""),
@@ -23,10 +31,10 @@ for (let i = 0; i < 2; i++) {
     } else {
         console.log('error');
         i--;
-    }
-
-    
+    }    
 }
+
+
 
 console.log(personalMovieDB);
 
